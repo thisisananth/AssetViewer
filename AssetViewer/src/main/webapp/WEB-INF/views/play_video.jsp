@@ -29,7 +29,7 @@
 	<script>
 		// initialize video.js
 		var player = videojs('player');
-		var url = "http://localhost:7070/AssetViewer/adxml";
+		var url = "resources/vast_inline_nonlinear.xml";
 
 		// Set value to the plugin
 		player.watermark({

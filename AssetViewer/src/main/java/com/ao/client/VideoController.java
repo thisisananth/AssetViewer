@@ -45,16 +45,5 @@ public class VideoController {
 	   
 	}
 	
-	@RequestMapping(value="/adxml", method=RequestMethod.GET)
-	public void getAdXML(HttpServletResponse response) throws IOException{
-		
-		response.setHeader("Access-Control-Allow-Origin","*");
-		response.setContentType(MediaType.APPLICATION_XML_VALUE);
-		File file = new File("/Users/ananthmajumdar/Documents/bootstrap/vast_inline_nonlinear.xml");
-		InputStream iStream = new FileInputStream(file);
-        IOUtils.copy(iStream, response.getOutputStream());
-        response.flushBuffer();
-		
-		
-	}
+	
 }
